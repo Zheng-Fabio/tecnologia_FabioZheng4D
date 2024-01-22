@@ -1,0 +1,22 @@
+<!-- Il tuo file HTML -->
+<body style="background-color: black; ">
+    <div class="container-fluid mt-5 text-center">
+      <button class="buttonLista btn btn-primary mt-3" (click)="toggleVisualizzaCalciatori()">Mostra giocatori</button>
+      <br>
+      <div class="row" *ngIf="visualizzaCalciatori && Calciatori && Calciatori.length > 0">
+        <div *ngFor="let calciatore of Calciatori" class="col-sm-4 mb-4">
+          <div class="card" style="border: 2px solid rgb(248, 226, 101);">
+            <div class="card-body">
+              <h3 class="card-title">{{calciatore.nome}}</h3>
+              <p class="card-text">Squadra: {{calciatore.Squadra}}</p>
+              <p class="card-text">Abilità: {{calciatore.Abilita}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!(visualizzaCalciatori && Calciatori && Calciatori.length > 0)" class="mt-4">
+        <p class="GoldText">Lista nascosta :)</p>
+      </div>
+    </div>
+  </body>
+  
