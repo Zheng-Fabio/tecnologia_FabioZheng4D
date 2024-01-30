@@ -9,7 +9,7 @@ export class calciatoriComponent {
   visualizzaCalciatori: boolean = false;
   testoBottone = 'Mostra Lista'
   Calciatori = [
-    { nome: 'messi', Squadra: 'Inter Miami' , Abilita: 'Tecnica' },
+    { nome: 'Messi', Squadra: 'Inter Miami' , Abilita: 'Tecnica' },
     { nome: 'Ronaldo', Squadra: 'Al Nasser', Abilita: 'Atleticismo' },
     { nome: 'Neymar', Squadra: 'Al Hilal', Abilita: 'Creativita' },
     { nome: 'Fabio', Squadra: 'Afforese', Abilita: 'Niente' },
