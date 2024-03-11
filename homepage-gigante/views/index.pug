@@ -1,0 +1,42 @@
+// views/index.pug
+doctype html
+html(lang="en")
+  head
+    title Homepage Gigante
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    style.
+      body {
+        background-color: #f8f9fa;
+      }
+      .container-fluid.text-center {
+        padding-top: 50px;
+      }
+      h1 {
+        color: #007bff;
+        font-size: 48px;
+        font-weight: bold;
+      }
+      .btn-primary {
+        background-color: #28a745;
+        border-color: #28a745;
+        width: 200px; /* Adjust button width */
+      }
+      .btn-primary:hover {
+        background-color: #218838;
+        border-color: #218838;
+      }
+      .jumbotron {
+        background-image: url('/img/football-background.jpg'); /* Add background image */
+        background-size: cover;
+        color: Black ;
+        padding: 100px; /* Adjust padding for better spacing */
+        margin-bottom: 0; /* Remove default margin to use the space effectively */
+      }
+      .lead {
+        margin-bottom: 20px; /* Add margin to lead paragraph */
+      }
+  body
+    .jumbotron
+      h1.display-4 Benvenuto alla Football 20' HOF
+      p.lead La tua destinazione per tutto ciò che riguarda il calcio.
+      a.btn.btn-primary.btn-lg(href="/profili") Esplora Profili

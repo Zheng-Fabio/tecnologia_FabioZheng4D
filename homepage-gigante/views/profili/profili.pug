@@ -1,0 +1,103 @@
+doctype html
+html(lang="en")
+  head
+    title Profili Iniziali
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .persona {
+        flex: 0 0 calc(33.33% - 20px);
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .persona:hover {
+        transform: translateY(-5px);
+      }
+      .persona img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .persona-content {
+        padding: 20px;
+        flex-grow: 1;
+      }
+      .persona h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #333;
+      }
+      .persona p {
+        margin: 5px 0;
+        color: #666;
+      }
+      .persona button {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .persona button:hover {
+        background-color: #45a049;
+      }
+  body
+    h1 Profili Iniziali
+    
+    // Container for profile cards
+    .container
+      // Profilo della persona 1
+      div.persona
+        img(src="/img/Messi_vs_Nigeria_2018.jpg", alt="Lionel Messi")
+        .persona-content
+          h2 Lionel Messi
+          p Nazionalità: Argentina
+          p Data di nascita: 24 giugno 1987
+          p Ruolo: Attaccante/Ala/Centrocampista
+        button(type="button")
+          a(href="/profili/persona1") Visualizza profilo
+        
+      // Profilo della persona 2
+      div.persona
+        img(src="/img/Cristiano_Ronaldo_2018.jpg", alt="Cristiano Ronaldo")
+        .persona-content
+          h2 Cristiano Ronaldo
+          p Nazionalità: Portogallo
+          p Data di nascita: 5 febbraio 1985
+          p Ruolo: Attaccante/Ala
+        button(type="button")
+          a(href="/profili/persona2") Visualizza profilo
+        
+      // Profilo della persona 3
+      div.persona
+        img(src="/img/gettyimages-973385442-612x612.jpg", alt="Neymar J.R.")
+        .persona-content
+          h2 Neymar J.R.
+          p Nazionalità: Brasile
+          p Data di nascita: 5 febbraio 1992
+          p Ruolo: Ala/Sinistra
+        button(type="button")
+          a(href="/profili/persona3") Visualizza profilo
