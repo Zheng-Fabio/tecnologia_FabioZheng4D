@@ -1,0 +1,53 @@
+/* Stili per l'immagine all'interno della colonna */
+.col-sm-4 img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc; /* Aggiungi un bordo di 2px solido grigio */
+  border-radius: 5px; /* Aggiungi un bordo arrotondato */
+  margin-bottom: 20px; /* Aggiungi spazio sotto l'immagine */
+}
+
+/* Stili per il contenitore delle informazioni della canzone */
+.com-sm-6 {
+  padding: 0 20px;
+}
+
+/* Stili per il titolo della canzone */
+.com-sm-6 h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Applica il tipo di carattere desiderato */
+  color: #333; /* Cambia il colore del testo */
+}
+
+/* Stili per l'autore della canzone */
+.com-sm-6 h2 {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Stili per il testo delle canzoni */
+.com-sm-6 h3 {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444; /* Cambia il colore del testo */
+}
+
+/* Stili per il link "vai indietro" */
+.container-fluid a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container-fluid a:hover {
+  text-decoration: underline;
+}
+
+/* Migliora il background */
+body {
+  background-color: #f0f0f0; /* Cambia il colore dello sfondo */
+}
