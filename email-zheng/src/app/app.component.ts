@@ -12,7 +12,7 @@ export class AppComponent {
   destinatario: string = '';
   oggetto: string = '';
   testo: string = '';
-  emails: { oggetto: string, mittente: string, destinatario: string, testo: string }[] = [];
+  emails: { oggetto: string, mittente: string, destinatario: string, testo: string, highlighted: boolean }[] = [];
 
   salvaEmail() {
     if (!this.mittente || !this.destinatario || !this.oggetto || !this.testo) {
@@ -20,7 +20,7 @@ export class AppComponent {
       return false;
     }
   
-    const email = { oggetto: this.oggetto, mittente: this.mittente, destinatario: this.destinatario, testo: this.testo };
+    const email = { oggetto: this.oggetto, mittente: this.mittente, destinatario: this.destinatario, testo: this.testo, highlighted: false };
     this.emails.push(email);
    
     this.mittente = '';
@@ -29,5 +29,20 @@ export class AppComponent {
     this.testo = '';
   
     return false;
+  }
+
+  toggleHighlighted(email: any) {
+    email.highlighted = !email.highlighted;
+  }
+
+  deleteEmail(email: any) {
+    // Trova l'indice dell'email nell'array emails
+    const index = this.emails.indexOf(email);
+    
+    // Verifica se l'email è stata trovata
+    if (index !== -1) {
+      // Rimuovi l'email dall'array
+      this.emails.splice(index, 1);
+    }
   }
 }
