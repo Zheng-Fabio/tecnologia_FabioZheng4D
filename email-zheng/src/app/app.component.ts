@@ -45,4 +45,8 @@ export class AppComponent {
       this.emails.splice(index, 1);
     }
   }
+  closeSite() {
+    window.close();
+  }
+
 }
